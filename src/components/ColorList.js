@@ -13,7 +13,7 @@ function ColorList() {
     <div>
       <h1>Top 5 CSS Colors</h1>
       <ol>
-        {colors.map(color => <li style={{color: color}}>{color}</li>)}
+        {colors.map(color => <li key={color} style={{color: color}}>{color}</li>)}
       </ol>
     </div>
   );
